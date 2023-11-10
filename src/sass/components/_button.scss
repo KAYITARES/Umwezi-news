@@ -1,0 +1,10 @@
+.btn {
+  @include button($secondary-color, $text-white-color);
+  display: inline-block;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translate(3px, -3px);
+    background-color: $secondary-white-color;
+  }
+}
