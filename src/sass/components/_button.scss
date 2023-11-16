@@ -1,7 +1,8 @@
 .btn {
-  @include button($secondary-color, $text-white-color);
+  @include button;
   display: inline-block;
   transition: all 0.3s;
+  font-size: 1.8rem;
 
   &:hover {
     transform: translate(3px, -3px);

@@ -1,5 +1,6 @@
 import logo from "../assets/logo.jpeg";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 
 function Header() {
     return (
@@ -15,9 +16,7 @@ function Header() {
                         </a>
                     </li>
                     <li>
-                        <Link to="#" className="nav-links_link btn">
-                            Sign-In
-                        </Link>
+                        <Button name="Sign-In" backgrounds="#161c30" textColor="white" />
                     </li>
                 </ul>
             </nav>

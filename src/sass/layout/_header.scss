@@ -21,7 +21,11 @@
   }
 }
 .category {
-  padding: 1rem;
+  padding: 2rem;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.114);
+  position: sticky;
+  top: 0;
+  z-index: 999;
   background-color: $secondary-color;
   &-links {
     @include flexs(center, center, 3rem);
