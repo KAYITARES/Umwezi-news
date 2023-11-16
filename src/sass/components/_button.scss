@@ -3,6 +3,7 @@
   display: inline-block;
   transition: all 0.3s;
   font-size: 1.8rem;
+  border: none;
 
   &:hover {
     transform: translate(3px, -3px);
