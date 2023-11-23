@@ -1,0 +1,54 @@
+.card-container {
+  padding: 10rem;
+  background-color: #eee;
+  li {
+    display: flex;
+
+    margin-bottom: 3rem;
+    background-color: #fff;
+    box-shadow: 1px 3px 3px rgba(128, 128, 128, 0.274);
+    img {
+      width: 40%;
+      padding: 3rem;
+    }
+    .decription {
+      padding: 3rem;
+
+      width: 100%;
+      .btn-cont {
+        text-align: center;
+      }
+      h3 {
+        font-size: $fontSize-md;
+        color: $text-dark-color;
+        text-align: right;
+        margin-bottom: 3rem;
+      }
+      .short {
+        color: $text-dark-color;
+        font-size: $fontSize-sm;
+        margin-bottom: 3rem;
+      }
+      .icons {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        gap: 3rem;
+        margin-bottom: 2rem;
+        p {
+          color: #555;
+        }
+      }
+      .likes,
+      .dislikes,
+      .comment {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        p {
+          font-size: $fontSize-sm;
+        }
+      }
+    }
+  }
+}
