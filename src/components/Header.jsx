@@ -1,10 +1,27 @@
 import logo from "../assets/logo.jpeg";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import Signup from "./Signup";
+import { useState } from "react";
+import Modal from "antd/es/modal/Modal";
+
 
 function Header() {
+    const [isOpen, setIsOpen] = useState(false)
+    const handleOpen = () => {
+        setIsOpen(true)
+    }
+
     return (
         <>
+            <Modal open={isOpen} onCancel={() => {
+                setIsOpen(false)
+            }} onOk={() => {
+                setIsOpen(false)
+            }} footer={null}>
+                <Signup />
+            </Modal>
+
             <nav className="nav">
                 <div className="logo">
                     <img src={logo} alt="umwezi logo" />
@@ -17,6 +34,7 @@ function Header() {
                     </li>
                     <li>
                         <Button name="Sign-In" backgrounds="#161c30" textColor="white" />
+                        <button onClick={handleOpen}>login</button>
                     </li>
                 </ul>
             </nav>
